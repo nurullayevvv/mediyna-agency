@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <!-- Ro'yxatdan o'tish tugmasi -->
+    <button class="btn-register" onclick="openForm()">Ro'yxatdan o'tish</button>
+
+    <!-- Form konteyneri -->
+    <div class="form-container" id="form-container">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Ismingiz:</label>
+                <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon raqamingiz:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon raqamingizni kiriting" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Reklamangiz uchun budget $:</label>
+                <input type="number" id="budget" name="budget" placeholder="Budjetni kiriting" required>
+            </div>
+            <button type="submit">Jo'natish</button>
+        </form>
+    </div>  
+
+    <!-- EmailJS Kitapxonasi -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
